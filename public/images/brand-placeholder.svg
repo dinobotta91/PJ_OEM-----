@@ -1,6 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="640" height="420" viewBox="0 0 640 420">
-  <rect width="640" height="420" fill="#ffffff" rx="24" />
-  <circle cx="320" cy="210" r="108" fill="#2f7abf" opacity="0.12" />
-  <rect x="120" y="120" width="400" height="180" rx="20" fill="#f2fbfc" />
-  <text x="320" y="230" font-family="Inter, Arial, sans-serif" font-size="36" fill="#0b2336" text-anchor="middle" opacity="0.95">Brand Visual</text>
-</svg>

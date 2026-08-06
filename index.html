@@ -1,99 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Paninkret Japan | OEM Solutions for Health & Beauty</title>
-    <link rel="stylesheet" href="css/styles.css" />
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Paninkret Japan | OEM Solutions for Health & Beauty</title>
+  <meta
+    name="description"
+    content="Paninkret Japan is a Japanese OEM partner specializing in cosmetics, skincare, health supplements, and functional beverages. From product development to manufacturing and export support, we help brands launch globally."
+  />
+  <meta
+    property="og:title"
+    content="Paninkret Japan | OEM Solutions for Health & Beauty"
+  />
+  <meta
+    property="og:description"
+    content="Paninkret Japan is a Japanese OEM partner specializing in cosmetics, skincare, health supplements, and functional beverages."
+  />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://paninkret.jp/images/ogp.jpg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Noto+Serif+JP:wght@400;500;600&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="icon" type="image/png" href="favicon/favicon-512.png" />
+  <link rel="apple-touch-icon" href="favicon/favicon-512.png" />
+  <link rel="shortcut icon" href="favicon/favicon-512.png" />
+</head>
   <body>
     <header class="site-header">
       <div class="container header-inner">
         <a href="#home" class="brand-logo" aria-label="PANINKRET JAPAN">
-          <div class="brand-logo-box">
-            <img src="public/images/logo.png" srcset="public/images/logo@2x.png 2x" alt="PANINKRET JAPAN logo" class="brand-logo-image" />
-          </div>
-          <div class="brand-text">
-            <span class="brand-tagline">Japanese OEM Partner for Health, Beauty & Wellness Brands</span>
-          </div>
+          <img src="public/images/logo.png" srcset="public/images/logo@2x.png 2x" alt="PANINKRET JAPAN logo" class="brand-logo-image" draggable="false" />
         </a>
 
-        <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-label="Open navigation">
-          <span class="nav-icon"></span>
-        </button>
-
-        <nav class="site-nav" id="siteNav">
-          <a href="#home">Home</a>
-          <a href="#solutions">OEM Solutions</a>
-          <a href="#categories">Product Categories</a>
-          <a href="#why">Why Paninkret</a>
-          <a href="#about">About Us</a>
-          <a href="#contact">Contact</a>
-          <a href="#contact" class="nav-cta">Contact Us</a>
+        <nav class="site-nav" id="siteNav" aria-label="Main navigation">
+          <a href="product-categories.html">Product Categories</a>
+          <a href="#process">OEM Process</a>
+          <a href="about.html">About Us</a>
+          <a href="#contact" class="nav-cta">Contact</a>
         </nav>
+
+        <button
+          class="nav-toggle"
+          id="navToggle"
+          aria-label="Open navigation"
+          aria-expanded="false"
+          aria-controls="siteNav"
+        >
+          <span class="nav-icon" aria-hidden="true"></span>
+        </button>
       </div>
     </header>
 
     <main>
-      <section class="hero" id="home">
+      <section class="hero" id="home" style="background-image: url('public/images/top-v2.png');">
         <div class="container hero-grid">
           <div class="hero-copy">
-            <p class="eyebrow">Japanese OEM expertise for international brands</p>
-            <h1>Create Your Next Health & Beauty Brand — Made in Japan.</h1>
-              <p class="hero-text">
-              OEM solutions for protein, supplements, functional beverages, and Skincare &amp; Cosmetics.
-              From product development to export support, we help bring your brand to market.
+            <h1>Launch Your Beauty & Wellness Brand with Japanese OEM Expertise.</h1>
+            <p class="hero-text">
+              Build a distinctive brand backed by Japanese quality, with one trusted partner for product development, manufacturing, and export support.
             </p>
-              <p class="brand-concept">美と健やかさに、日本品質の確かさを。</p>
-              <p class="hero-subtext">Whether you have a product idea or an existing brand, our team is ready to help.</p>
             <div class="hero-actions">
               <a href="#contact" class="button button-primary">Request an OEM Consultation</a>
-              <a href="#categories" class="button button-secondary">View Product Categories</a>
-            </div>
-          </div>
-
-          <div class="hero-visual" aria-hidden="true">
-            <div class="hero-visual-inner product-visual">
-              <picture>
-                <source srcset="public/images/hero-product.svg" type="image/svg+xml">
-                <source srcset="public/images/hero-product.jpg" type="image/jpeg">
-                <img src="public/images/hero-placeholder.svg" alt="Premium product visual" class="hero-visual-image product-image" />
-              </picture>
-              <!-- Product-type badges: convey capability (replace with icons/images later if desired) -->
-              <div class="hero-badges" aria-hidden="true">
-                <span class="badge">
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                    <path d="M12 2C12 2 6 9 6 13a6 6 0 0012 0c0-4-6-11-6-11z" fill="#fff"/>
-                    <circle cx="12" cy="14" r="2" fill="#fff" opacity="0.9"/>
-                  </svg>
-                  Skincare &amp; Cosmetics
-                </span>
-                <span class="badge">
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                    <rect x="2" y="10" width="20" height="6" rx="3" fill="#fff"/>
-                    <path d="M6 10l6-6" stroke="#fff" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
-                  </svg>
-                  Supplements
-                </span>
-                <span class="badge">
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                    <path d="M3 10c0 0 2-6 9-6s9 6 9 6v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6z" fill="#fff"/>
-                    <path d="M8 14h8" stroke="#fff" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
-                  </svg>
-                  Functional Beverages
-                </span>
-                <span class="badge">
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                    <circle cx="9" cy="12" r="3" fill="#fff"/>
-                    <path d="M14 7l5 5" stroke="#fff" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M19 12l-1 1" stroke="#fff" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
-                  </svg>
-                  Protein
-                </span>
-              </div>
-              <div class="hero-visual-copy">
-                <span>Premium Japanese product concepts for health, beauty and wellness brands</span>
-              </div>
+              <a href="product-categories.html" class="button button-secondary">Explore Product Categories</a>
             </div>
           </div>
         </div>
@@ -101,179 +73,143 @@
 
       <section class="stats-bar">
         <div class="container stats-grid">
-          <div class="stat-item">
-            <strong>10+ years</strong>
-            <span>of overseas OEM experience</span>
+          <div class="stat-item stat-item--experience">
+            <div class="stat-header">
+              <div class="stats-icon-wrap">
+                <img class="stats-icon-image" src="public/images/stats/experience-scale.png" alt="Experience and global OEM scale" draggable="false" />
+              </div>
+              <strong>Experience & Scale</strong>
+            </div>
+            <div class="stat-detail-group">
+              <div class="stat-detail-row">
+                <span class="stat-detail-label">10+ years</span>
+                <span class="stat-detail-meta">of international OEM experience</span>
+              </div>
+              <div class="stat-detail-row">
+                <span class="stat-detail-label">1M+ units</span>
+                <span class="stat-detail-meta">exported worldwide</span>
+              </div>
+            </div>
           </div>
+
           <div class="stat-item">
-            <strong>Southeast Asia focus</strong>
-            <span>including Vietnam market support</span>
+            <div class="stat-header">
+              <div class="stats-icon-wrap">
+                <img class="stats-icon-image" src="public/images/stats/full-export-support.png" alt="Export documentation and ocean freight support" draggable="false" />
+              </div>
+              <strong>Full Export Support</strong>
+            </div>
+            <div class="stat-detail-group">
+              <p>Export documentation and logistics coordination from Japan.</p>
+            </div>
           </div>
+
           <div class="stat-item">
-            <strong>Full export support</strong>
-            <span>documentation, logistics, and compliance</span>
+            <div class="stat-header">
+              <div class="stats-icon-wrap">
+                <img class="stats-icon-image" src="public/images/stats/epa-preferential-tariff.png" alt="EPA preferential tariff documentation support" draggable="false" />
+              </div>
+              <strong>EPA Preferential Tariff Support</strong>
+            </div>
+            <div class="stat-detail-group">
+              <p>Origin documentation support for eligible preferential tariff treatment.</p>
+            </div>
           </div>
         </div>
       </section>
 
       <section class="section" id="solutions">
-        <div class="container">
-          <div class="section-header">
-            <p class="eyebrow">OEM Solutions</p>
-            <h2>Comprehensive product development and manufacturing support</h2>
+        <div class="container solutions-hero">
+          <div class="solutions-hero-copy">
+            <p class="section-eyebrow">PRODUCT CATEGORIES</p>
+            <h2 class="section-title">Beauty, Health & Wellness Product Categories</h2>
+            <p>We support skincare, health supplements, functional beverages, protein products, professional-use formulas, and selected bath products through our network of experienced Japanese manufacturers.</p>
+            <a href="product-categories.html" class="button button-primary">Explore Product Categories</a>
           </div>
-
-          <div class="card-grid">
-            <article class="card">
-              <h3>Skincare &amp; Cosmetics</h3>
-              <p>Skincare &amp; cosmetics development for cleansing, hydration, and beauty wellness products.</p>
-            </article>
-            <article class="card">
-              <h3>Supplements</h3>
-              <p>Vitamin, mineral, and functional supplement development with Japanese quality.</p>
-            </article>
-            <article class="card">
-              <h3>Functional Beverages</h3>
-              <p>Ready-to-drink wellness beverages with safe and stable formulations.</p>
-            </article>
-            <article class="card">
-              <h3>Protein</h3>
-              <p>Custom formulations and packaging for premium protein powders and shakes.</p>
-            </article>
+          <div class="solutions-hero-image">
+            <div class="solutions-image-frame">
+              <img src="public/images/paninkret-oem-hero-modern-1600x900.png" alt="Paninkret Japan OEM beauty, health and wellness products" draggable="false" />
+            </div>
           </div>
         </div>
       </section>
 
-      <!-- Product categories section added for top page overview -->
-      <section class="section product-categories" id="categories">
+      <section class="section why-section" id="why-us">
         <div class="container">
           <div class="section-header">
-            <p class="eyebrow">Product Categories</p>
-            <h2>Premium Japanese OEM categories for your brand</h2>
-          </div>
-
-          <div class="card-grid">
-            <article class="card">
-              <h3>Skincare &amp; Cosmetics</h3>
-              <p>Skincare &amp; cosmetics products designed for healthy, elegant beauty routines.</p>
-            </article>
-            <article class="card">
-              <h3>Supplements</h3>
-              <p>Function-driven supplements for immunity, wellness, and daily nutrition.</p>
-            </article>
-            <article class="card">
-              <h3>Functional Beverages</h3>
-              <p>Refreshing beverage solutions for wellness, hydration, and active lifestyles.</p>
-            </article>
-            <article class="card">
-              <h3>Protein</h3>
-              <p>High-performance protein formulas and energy support products.</p>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section class="section why-section" id="why">
-        <div class="container">
-          <div class="section-header">
-            <p class="eyebrow">Why Choose Paninkret</p>
-            <h2>Trusted partner for Japanese OEM health and beauty products</h2>
+            <p class="section-eyebrow">WHY CHOOSE PANINKRET</p>
+            <h2 class="section-title">Japanese Manufacturing Expertise with Flexible, Hands-On Support</h2>
           </div>
 
           <div class="feature-grid">
             <article class="feature-card">
-              <div class="feature-icon">01</div>
-              <h3>Japanese product expertise</h3>
-              <p>Deep knowledge of ingredients, quality control, and formulation design.</p>
+              <img class="feature-icon" src="public/images/why-choose-icons/japanese-manufacturing-network.png" alt="Japanese Manufacturing Network icon" loading="lazy" draggable="false" />
+              <h3>Japanese Manufacturing Network</h3>
+              <p>We work with leading cosmetics OEM manufacturers operating under ISO 22716, as well as health supplement manufacturers that meet strict GMP and quality standards. Our packaging network also provides Japan-standard quality across a wide range of formats and designs.</p>
             </article>
             <article class="feature-card">
-              <div class="feature-icon">02</div>
-              <h3>Full OEM support</h3>
-              <p>From concept to samples, manufacturing and packaging, we manage the process.</p>
+              <img class="feature-icon" src="public/images/why-choose-icons/flexible-product-development.png" alt="Flexible Product Development icon" loading="lazy" draggable="false" />
+              <h3>Flexible Product Development</h3>
+              <p>We support product planning from initial consultation through ingredient selection, formulation, and product specifications. Packaging and design support is also available when needed.</p>
             </article>
             <article class="feature-card">
-              <div class="feature-icon">03</div>
-              <h3>Export-ready service</h3>
-              <p>Export documentation, customs paperwork, and international shipping support.</p>
+              <img class="feature-icon" src="public/images/why-choose-icons/international-export-experience.png" alt="International Export Experience icon" loading="lazy" draggable="false" />
+              <h3>International Export Experience</h3>
+              <p>With more than 10 years of international OEM experience, we coordinate Japan-side export documentation and logistics for overseas clients.</p>
             </article>
             <article class="feature-card">
-              <div class="feature-icon">04</div>
-              <h3>International market insight</h3>
-              <p>Focused support for Southeast Asian markets and brands looking to expand.</p>
+              <img class="feature-icon" src="public/images/why-choose-icons/long-term-partnership.png" alt="Long-term, Hands-on Partnership icon" loading="lazy" draggable="false" />
+              <h3>Long-term, Hands-on Partnership</h3>
+              <p>We work closely with clients as a hands-on partner, with relationships lasting up to 10 years. Our streamlined decision-making enables fast and flexible responses.</p>
             </article>
           </div>
         </div>
       </section>
 
-      <section class="section brand-support">
-        <div class="container brand-support-inner">
-          <div>
-            <p class="eyebrow">Supporting Brands Across International Markets</p>
-            <h2>Strong OEM support for brands in Southeast Asia, including Vietnam</h2>
-            <p>
-              We provide tailored services for distributors, entrepreneurs, and wellness brands
-              seeking reliable Japanese manufacturing and export support.
-            </p>
-          </div>
-          <div class="brand-graphic" aria-hidden="true">
-            <img src="public/images/brand-visual.svg" alt="Export and OEM visual" />
-          </div>
-        </div>
-      </section>
-
-      <section class="section process-section">
+      <section class="section process-section" id="process">
         <div class="container">
           <div class="section-header">
-            <p class="eyebrow">Our Process</p>
-            <h2>A smooth journey from idea to market entry</h2>
+            <p class="section-eyebrow">OUR PROCESS</p>
+            <h2 class="section-title">A Clear Path from Concept to International Delivery</h2>
           </div>
 
-          <div class="process-grid">
-            <article class="process-step">
-              <span>Consultation</span>
-              <p>We discuss your brand goals, target market, and product requirements.</p>
-            </article>
-            <article class="process-step">
-              <span>Development</span>
-              <p>We design formulations, test samples, and prepare packaging for production.</p>
-            </article>
-            <article class="process-step">
-              <span>Export Support</span>
-              <p>We manage documentation, compliance, and logistics for international delivery.</p>
-            </article>
-          </div>
+          <picture class="process-picture">
+            <source
+              media="(max-width: 767px)"
+              srcset="public/images/oem-process-mobile.png"
+            >
+            <img
+              src="public/images/oem-process-desktop.png"
+              alt="Five-step OEM process from consultation to international delivery"
+              class="process-image"
+              draggable="false"
+            >
+          </picture>
         </div>
       </section>
 
       <!-- About Us section provides company strengths and background -->
       <section class="section about-section" id="about">
         <div class="container">
-          <div class="section-header">
-            <p class="eyebrow">About Us</p>
-            <h2>Paninkret Japan supports overseas brands with Japanese OEM manufacturing</h2>
-          </div>
+          <div class="about-hero">
+            <div class="about-content">
+              <div class="section-header">
+                <p class="section-eyebrow">ABOUT PANINKRET JAPAN</p>
+                <h2 class="section-title">Connecting Global Brands with<br>Japanese Manufacturing Expertise</h2>
+              </div>
 
-          <div class="feature-grid">
-            <article class="feature-card">
-              <div class="feature-icon">A</div>
-              <h3>Japanese manufacturing network</h3>
-              <p>We connect overseas brands with trusted Japanese OEM factories for health and beauty products.</p>
-            </article>
-            <article class="feature-card">
-              <div class="feature-icon">B</div>
-              <h3>Export assistance</h3>
-              <p>We support export documentation, customs compliance, and overseas logistics.</p>
-            </article>
-            <article class="feature-card">
-              <div class="feature-icon">C</div>
-              <h3>Market-focused consultation</h3>
-              <p>We help brands shape products for Southeast Asia, including Vietnam, with international appeal.</p>
-            </article>
-            <article class="feature-card">
-              <div class="feature-icon">D</div>
-              <h3>Long-term partnership</h3>
-              <p>We serve clients as a reliable partner, not a middleman, building high-value products together.</p>
-            </article>
+              <div class="about-intro">
+                <p>Paninkret Japan Co., Ltd. is an OEM coordination company based in Osaka and Tokyo, supporting the development, manufacturing, and export of Japanese health, beauty, and wellness products. We work with experienced manufacturers across Japan to help overseas brands bring their product ideas to market.</p>
+                <a href="about.html" class="button button-primary">Learn More About Us</a>
+              </div>
+            </div>
+
+            <img
+              class="about-network-image"
+              src="public/images/about-global-network.png"
+              alt="Global network connecting Japanese OEM expertise with international markets"
+              draggable="false"
+            />
           </div>
         </div>
       </section>
@@ -281,8 +217,8 @@
       <section class="section contact-section" id="contact">
         <div class="container contact-grid">
           <div class="contact-copy">
-            <p class="eyebrow">Contact</p>
-            <h2>Let's discuss your OEM project.</h2>
+            <p class="section-eyebrow">Contact</p>
+            <h2 class="section-title">Let's discuss your OEM project.</h2>
             <p>
               Share your product vision and requirements, and we will provide a tailored proposal
               for manufacturing and export.
@@ -291,10 +227,13 @@
 
           <form class="contact-form" action="#" method="post">
             <label for="name">Name</label>
-            <input type="text" id="name" name="name" placeholder="Your full name" required />
+            <input type="text" id="name" name="name" placeholder="Your name" required />
 
             <label for="company">Company</label>
             <input type="text" id="company" name="company" placeholder="Company or brand name" required />
+
+            <label for="website">Web Address (if available)</label>
+            <input type="url" id="website" name="website" placeholder="https://example.com" />
 
             <label for="email">Email</label>
             <input type="email" id="email" name="email" placeholder="you@example.com" required />
@@ -305,11 +244,15 @@
             <label for="category">Product Category</label>
             <select id="category" name="category" required>
               <option value="">Select a category</option>
-              <option value="skincare">Skincare &amp; Cosmetics</option>
-              <option value="supplements">Supplements</option>
-              <option value="beverages">Functional Beverages</option>
-              <option value="protein">Protein</option>
-              <option value="other">Other</option>
+              <option value="skincare-cosmetics-fragrance">Skincare, Cosmetics &amp; Fragrance</option>
+              <option value="cleansing-body-bath">Cleansing, Body &amp; Bath Care</option>
+              <option value="hair-scalp-care">Hair &amp; Scalp Care</option>
+              <option value="health-supplements">Health Supplements</option>
+              <option value="functional-beverages">Functional Beverages</option>
+              <option value="protein-products">Protein Products</option>
+              <option value="oral-care">Oral Care</option>
+              <option value="multiple-categories">Multiple Categories</option>
+              <option value="other-not-sure">Other / Not Sure</option>
             </select>
 
             <label for="quantity">Estimated Order Quantity</label>
@@ -317,13 +260,14 @@
               <option value="">Select an estimate</option>
               <option value="undecided">Not decided yet — I need consultation</option>
               <option value="1000">1,000 units</option>
+              <option value="3000">3,000 units</option>
               <option value="5000">5,000 units</option>
               <option value="10000">10,000 units</option>
               <option value="other">Other (please specify in message)</option>
             </select>
 
             <label for="message">Message</label>
-            <textarea id="message" name="message" rows="5" placeholder="Tell us about your project"></textarea>
+            <textarea id="message" name="message" rows="5" placeholder="Tell us about your product idea, target market, preferred specifications, or any questions." required></textarea>
 
             <button type="submit" class="button button-primary">Send Inquiry</button>
           </form>
@@ -333,13 +277,14 @@
 
     <footer class="site-footer">
       <div class="container footer-inner">
-        <p class="footer-company"><span class="jp-accent">日本のOEMパートナー</span> <span class="en-accent">/ Your Japanese OEM Partner</span></p>
+        <p class="footer-copy">© 2026 Paninkret Japan Co., Ltd. All rights reserved.</p>
         <nav class="footer-nav">
-          <a href="#home">Home</a>
-          <a href="#solutions">OEM Solutions</a>
-          <a href="#categories">Product Categories</a>
-          <a href="#why">Why Paninkret</a>
-          <a href="#contact">Contact</a>
+          <a href="index.html">Home</a>
+          <a href="product-categories.html">Product Categories</a>
+          <a href="index.html#process">OEM Process</a>
+          <a href="about.html">About Us</a>
+          <a href="index.html#contact">Contact</a>
+          <a href="http://www.paninkret.jp" target="_blank" rel="noopener noreferrer">Japanese Website ↗</a>
         </nav>
       </div>
     </footer>

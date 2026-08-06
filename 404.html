@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Paninkret Japan | Page Not Found</title>
+
+  <meta
+    name="description"
+    content="The page you are looking for could not be found."
+  />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Noto+Serif+JP:wght@400;500;600&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="css/styles.css" />
+
+  <link rel="icon" type="image/png" href="favicon/favicon-512.png" />
+  <link rel="apple-touch-icon" href="favicon/favicon-512.png" />
+  <link rel="shortcut icon" href="favicon/favicon-512.png" />
+
+  <style>
+    .error-page {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 40px 24px;
+      text-align: center;
+      background: linear-gradient(180deg, #ffffff 0%, #f4fbff 100%);
+    }
+
+    .error-page__inner {
+      max-width: 720px;
+    }
+
+    .error-page__code {
+      margin: 0 0 16px;
+      font-family: "Libre Baskerville", serif;
+      font-size: clamp(88px, 18vw, 180px);
+      line-height: 1;
+      color: #2f7fbd;
+    }
+
+    .error-page__title {
+      margin: 0 0 20px;
+      font-family: "Libre Baskerville", serif;
+      font-size: clamp(30px, 5vw, 48px);
+      line-height: 1.25;
+      color: #123f5c;
+    }
+
+    .error-page__text {
+      margin: 0 auto 32px;
+      max-width: 560px;
+      font-size: 16px;
+      line-height: 1.8;
+      color: #4e6877;
+    }
+
+    .error-page__button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 220px;
+      min-height: 52px;
+      padding: 14px 28px;
+      border-radius: 999px;
+      background: #3387c8;
+      color: #ffffff;
+      font-weight: 700;
+      text-decoration: none;
+      transition: opacity 0.2s ease, transform 0.2s ease;
+    }
+
+    .error-page__button:hover {
+      opacity: 0.9;
+      transform: translateY(-1px);
+    }
+  </style>
+</head>
+
+<body>
+  <main class="error-page">
+    <div class="error-page__inner">
+      <p class="error-page__code">404</p>
+
+      <h1 class="error-page__title">Page Not Found</h1>
+
+      <p class="error-page__text">
+        Sorry, the page you are looking for could not be found.
+        It may have been moved, deleted, or the URL may be incorrect.
+      </p>
+
+      <a class="error-page__button" href="index.html">
+        Back to Home
+      </a>
+    </div>
+  </main>
+</body>
+</html>
