@@ -947,6 +947,14 @@ section#solutions .solutions-grid .solution-card .solution-content p {
   line-height: 1.45;
 }
 
+.thanks-card {
+  text-align: center;
+}
+
+.thanks-card p {
+  margin: 0.2rem 0;
+}
+
 .site-footer {
   border-top: 1px solid rgba(11, 28, 49, 0.08);
   padding: 2rem 0;
