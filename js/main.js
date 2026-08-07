@@ -40,3 +40,72 @@ document.addEventListener('contextmenu', function (event) {
     event.preventDefault();
   }
 });
+
+(function () {
+  const form = document.querySelector('.contact-form[action="https://formspree.io/f/mwlepnag"]');
+  if (!form) return;
+
+  const emailInput = form.querySelector('input[name="email"]');
+  const confirmEmailInput = form.querySelector('input[name="confirm_email"]');
+  const confirmEmailError = form.querySelector('#confirm-email-error');
+  if (!emailInput || !confirmEmailInput || !confirmEmailError) return;
+
+  const successRedirectUrl = 'https://paninkret-oem.pages.dev/thanks.html';
+
+  function clearConfirmEmailError() {
+    confirmEmailError.hidden = true;
+    confirmEmailInput.setAttribute('aria-invalid', 'false');
+  }
+
+  function showConfirmEmailError() {
+    confirmEmailError.hidden = false;
+    confirmEmailInput.setAttribute('aria-invalid', 'true');
+  }
+
+  function emailsMatch() {
+    return emailInput.value.trim() === confirmEmailInput.value.trim();
+  }
+
+  emailInput.addEventListener('input', function () {
+    if (confirmEmailInput.value && emailsMatch()) {
+      clearConfirmEmailError();
+    }
+  });
+
+  confirmEmailInput.addEventListener('input', function () {
+    if (emailsMatch()) {
+      clearConfirmEmailError();
+    }
+  });
+
+  form.addEventListener('submit', async function (event) {
+    event.preventDefault();
+
+    if (!emailsMatch()) {
+      showConfirmEmailError();
+      confirmEmailInput.focus();
+      return;
+    }
+
+    clearConfirmEmailError();
+
+    const formData = new FormData(form);
+    formData.delete('confirm_email');
+
+    try {
+      const response = await fetch(form.action, {
+        method: 'POST',
+        body: formData,
+        headers: {
+          Accept: 'application/json'
+        }
+      });
+
+      if (response.ok) {
+        window.location.href = successRedirectUrl;
+      }
+    } catch (error) {
+      // Keep the user on the form when submission fails.
+    }
+  });
+}());
