@@ -951,8 +951,13 @@ section#solutions .solutions-grid .solution-card .solution-content p {
   text-align: center;
 }
 
-.thanks-card p {
-  margin: 0.2rem 0;
+.thanks-card .thanks-message {
+  display: grid;
+  gap: 8px;
+}
+
+.thanks-card .thanks-message p {
+  margin: 0;
 }
 
 .site-footer {
