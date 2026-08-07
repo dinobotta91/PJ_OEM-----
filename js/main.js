@@ -48,7 +48,8 @@ document.addEventListener('contextmenu', function (event) {
   const emailInput = form.querySelector('input[name="email"]');
   const confirmEmailInput = form.querySelector('input[name="confirm_email"]');
   const confirmEmailError = form.querySelector('#confirm-email-error');
-  if (!emailInput || !confirmEmailInput || !confirmEmailError) return;
+  const privacyConsentInput = form.querySelector('input[name="privacy_consent"]');
+  if (!emailInput || !confirmEmailInput || !confirmEmailError || !privacyConsentInput) return;
 
   const successRedirectUrl = 'https://paninkret-oem.pages.dev/thanks.html';
 
@@ -64,6 +65,10 @@ document.addEventListener('contextmenu', function (event) {
 
   function emailsMatch() {
     return emailInput.value.trim() === confirmEmailInput.value.trim();
+  }
+
+  function consentChecked() {
+    return privacyConsentInput.checked;
   }
 
   emailInput.addEventListener('input', function () {
@@ -84,6 +89,11 @@ document.addEventListener('contextmenu', function (event) {
     if (!emailsMatch()) {
       showConfirmEmailError();
       confirmEmailInput.focus();
+      return;
+    }
+
+    if (!consentChecked()) {
+      privacyConsentInput.focus();
       return;
     }
 
